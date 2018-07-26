@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		07FBC68320C6990600FE6CAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FBC68220C6990600FE6CAA /* AppDelegate.swift */; };
-		07FBC68520C6990600FE6CAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FBC68420C6990600FE6CAA /* ViewController.swift */; };
 		07FBC68820C6990600FE6CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FBC68620C6990600FE6CAA /* Main.storyboard */; };
 		07FBC68B20C6990600FE6CAA /* Memorable_Places.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07FBC68920C6990600FE6CAA /* Memorable_Places.xcdatamodeld */; };
 		07FBC68D20C6990800FE6CAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07FBC68C20C6990800FE6CAA /* Assets.xcassets */; };
 		07FBC69020C6990800FE6CAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FBC68E20C6990800FE6CAA /* LaunchScreen.storyboard */; };
+		07FBC69820C69EE100FE6CAA /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FBC69720C69EE100FE6CAA /* PlacesViewController.swift */; };
+		07FBC69C20C6A6D400FE6CAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FBC69B20C6A6D400FE6CAA /* ViewController.swift */; };
+		07FBC69F20C7FFA900FE6CAA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07FBC69E20C7FFA900FE6CAA /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07FBC67F20C6990600FE6CAA /* Memorable Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memorable Places.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FBC68220C6990600FE6CAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07FBC68420C6990600FE6CAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07FBC68720C6990600FE6CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07FBC68A20C6990600FE6CAA /* Memorable_Places.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Memorable_Places.xcdatamodel; sourceTree = "<group>"; };
 		07FBC68C20C6990800FE6CAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07FBC68F20C6990800FE6CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07FBC69120C6990800FE6CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07FBC69720C69EE100FE6CAA /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		07FBC69B20C6A6D400FE6CAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07FBC69E20C7FFA900FE6CAA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07FBC69F20C7FFA900FE6CAA /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,7 @@
 			children = (
 				07FBC68120C6990600FE6CAA /* Memorable Places */,
 				07FBC68020C6990600FE6CAA /* Products */,
+				07FBC69D20C7FFA900FE6CAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				07FBC68220C6990600FE6CAA /* AppDelegate.swift */,
-				07FBC68420C6990600FE6CAA /* ViewController.swift */,
+				07FBC69720C69EE100FE6CAA /* PlacesViewController.swift */,
+				07FBC69B20C6A6D400FE6CAA /* ViewController.swift */,
 				07FBC68620C6990600FE6CAA /* Main.storyboard */,
 				07FBC68C20C6990800FE6CAA /* Assets.xcassets */,
 				07FBC68E20C6990800FE6CAA /* LaunchScreen.storyboard */,
@@ -65,6 +72,14 @@
 				07FBC68920C6990600FE6CAA /* Memorable_Places.xcdatamodeld */,
 			);
 			path = "Memorable Places";
+			sourceTree = "<group>";
+		};
+		07FBC69D20C7FFA900FE6CAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07FBC69E20C7FFA900FE6CAA /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07FBC68520C6990600FE6CAA /* ViewController.swift in Sources */,
 				07FBC68B20C6990600FE6CAA /* Memorable_Places.xcdatamodeld in Sources */,
 				07FBC68320C6990600FE6CAA /* AppDelegate.swift in Sources */,
+				07FBC69C20C6A6D400FE6CAA /* ViewController.swift in Sources */,
+				07FBC69820C69EE100FE6CAA /* PlacesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
